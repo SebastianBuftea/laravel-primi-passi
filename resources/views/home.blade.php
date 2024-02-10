@@ -14,11 +14,10 @@
     <div class="conatainer">
         <div class="row">
             <div class="col text-center">
-                <h2>Hello World</h2>
+                <h2>{{ $Hellow }}</h2>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
