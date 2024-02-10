@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $Hellow = 'Hellow World';
-    return view('home', compact('Hellow'));
+    $Hello = 'Hello World';
+    return view('home', compact('Hello'));
+});
+
+Route::get('/language.hello', function () {
+    $languages = ['Hola Mundo', 'Γειά σου Κόσμε', 'Përshendetje Botë', 'Bonjour le monde', 'Ciao Mondo', 'Salut Lume', 'Привет, мир', '
+    Hallo Welt'];
+    return view('language', compact('languages'));
 });
